@@ -23,19 +23,11 @@ export class MySurveyComponent implements OnInit {
 
   onButtonClick(){
     console.log("Button clicked")
-    const github = this.model.getQuestionByName("GitHub");
-    if (github) {
-      github.title = "GitHub username:"
-    }
-
-    const panel = this.model.getPanelByName("Contacts");
-    if (panel) {
-      // Collapse the panel
-      panel.state = "collapsed";
-    }
+    const panel = this.model.getPanelByName("bigPanel");
+    
     // Add a Telegram question to the panel
     const telegram = panel.addNewQuestion("text", "Telegram");
     telegram.title = "Telegram:"
-    
+
   }
 }
