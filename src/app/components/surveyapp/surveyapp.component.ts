@@ -2,16 +2,48 @@ import { Component, OnInit } from '@angular/core';
 import { Model } from "survey-core";
 
 const surveyJson = {
-  elements: [{
-    name: "FirstName",
-    title: "Enter your first name:",
-    type: "text"
-  }, {
-    name: "LastName",
-    title: "Enter your last name:",
-    type: "text"
-  }]
-};
+  "title": "¡Bienvenido!",
+  "logoPosition": "right",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "text",
+          "name": "Nombre",
+          "isRequired": true,
+          "autocomplete": "name"
+        },
+        {
+          "type": "text",
+          "name": "Apellido",
+          "isRequired": true
+        },
+        {
+          "type": "text",
+          "name": "Titulo de la encuesta",
+          "isRequired": true
+        },
+        {
+          "type": "checkbox",
+          "name": "Componentes de la encuesta",
+          "isRequired": true,
+          "choices": [
+            "Caja de texto",
+            "CheckBox",
+            "RadioButtons"
+          ],
+          "choicesOrder": "asc",
+          "showSelectAllItem": true,
+          "maxSelectedChoices": 10,
+          "minSelectedChoices": 1,
+          "selectAllText": "Seleccionar Todo"
+        }
+      ]
+    }
+  ],
+  "mode": "display"
+}
 
 
 
