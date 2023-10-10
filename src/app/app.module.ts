@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SurveyModule } from "survey-angular-ui";
 import { MySurvey } from './components/survey/survey.surveyhome';
+import { PeliculasComponent } from './components/peliculas/peliculas.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MySurvey
+    MySurvey,
+    PeliculasComponent
   ],
   imports: [
     BrowserModule,

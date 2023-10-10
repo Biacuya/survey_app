@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'my-survey',
-    template: `<h1>Hola Universo, soy survey</h1>
-    <p>Este es mi componente</p>`
+    templateUrl: './survey.surveyhome.html'
 })
 
 export class MySurvey {
@@ -16,4 +15,4 @@ export class MySurvey {
         this.year = 2023;
         console.log("Componente MySurvey cargado");
     }
-}
+} 
