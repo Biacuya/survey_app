@@ -41,8 +41,8 @@ const surveyJson = {
         },
         {
           "type": "text",
-          "name": "Pureba",
-          "description": "a"
+          "name": "Pregunta 1",
+          "description": ""
         }
       ]
     }
@@ -59,10 +59,14 @@ const surveyJson = {
 })
 export class SurveyappComponent implements OnInit {
   surveyModel!: Model;
+  message!: string;
   ngOnInit() {
     const survey = new Model(surveyJson);
-    survey.focusFirstQuestionAutomatic = false;
     this.surveyModel = survey;
 
+  }
+
+  showMessage() {
+    this.message = "Click";
   }
 }

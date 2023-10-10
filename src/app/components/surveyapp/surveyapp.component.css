@@ -1,0 +1,17 @@
+.buttonAdd {
+    background-color: #00ff9d;
+    border: none;
+    position: absolute;
+    /* Establece la posición absoluta */
+    top: 1180px;
+    /* Cambia la distancia desde la parte superior */
+    left: 854px;
+    /* Cambia la distancia desde la izquierda */
+    width: 200px;
+    /* Ancho del botón */
+    height: 50px;
+    /* Altura del botón */
+    font-size: 18px;
+    /* Tamaño de fuente del texto del botón */
+    border-radius: 10px;
+}
