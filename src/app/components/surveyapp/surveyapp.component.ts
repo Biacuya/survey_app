@@ -38,12 +38,16 @@ const surveyJson = {
           "maxSelectedChoices": 10,
           "minSelectedChoices": 1,
           "selectAllText": "Seleccionar Todo"
+        },
+        {
+          "type": "text",
+          "name": "Pureba",
+          "description": "a"
         }
       ]
     }
   ],
-  "mode": "display"
-}
+};
 
 
 
@@ -57,6 +61,8 @@ export class SurveyappComponent implements OnInit {
   surveyModel!: Model;
   ngOnInit() {
     const survey = new Model(surveyJson);
+    survey.focusFirstQuestionAutomatic = false;
     this.surveyModel = survey;
+
   }
 }
